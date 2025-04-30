@@ -1,6 +1,6 @@
 # 📧 OROGOLD.APP WL (скрипт массовой регистрации white-lists)
 
-🚀 Скрипт для массовой регистрации email-адресов на сайте [https://orogold.app/](https://ambient.xyz), с поддержкой HTTP и SOCKS5 прокси.
+🚀 Скрипт для массовой регистрации email-адресов на сайте [orogold.app/](https://orogold.app/), с поддержкой HTTP и SOCKS5 прокси.
 
 ## 🔧 Возможности
 

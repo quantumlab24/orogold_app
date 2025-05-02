@@ -20,6 +20,9 @@ def main():
         print("[-] Нет emails для регистрации!")
         return
 
+    # Пауза между отправкой аккаунтов в работу
+    SLEEP_BETWEEN_ACC = [2, 8]
+
     proxy_cycle = itertools.cycle(proxies_list) if proxies_list else None
 
     result_filename = f"results_{str(int(time.time()))}.txt"
@@ -86,7 +89,7 @@ def main():
             print(f"[!] Исключение для {email}: {ex}")
             session.close()
 
-        time.sleep(random.randint(2, 5))
+        time.sleep(random.randint(*SLEEP_BETWEEN_ACC))
 
     with open(result_filename, "a", encoding="utf-8") as r_file:
         for line in success_results:
